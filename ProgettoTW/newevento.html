@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmls="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<title>DAILY WINE - Without thoughts on glasses</title>
+<!-- meta: validazione e lettura da parte dei motori di ricerca -->
+<meta charset="utf-8"/>
+<meta name="description" content="Daily Wine - Crea ora un nuovo Evento presso la tua Cantina vinicola e fallo conoscere a tutti"/>
+<meta name="keywords" content="Daily Wine, Dayly, Wine, vini, vino, evento, new evento, cantina, eventi, inserisci, crea, descrizione, pannello cantina, scheda "/>
+<meta name="author" content="Pigatto Andrea, Gobbo Francesco e Scialabba Daniele"/>
+<!-- link: per risorse estrene con href o rel
+base: posizione di base per i collegamenti -->
+
+<!-- foglio di stile css -->
+<link href="CSS/stilenewevento.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+<link href="CSS/mobile.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 720px)"/>
+<link href="CSS/tablet1.css" rel="stylesheet" media="handheld, only screen and (min-device-width: 721px) and (max-device-width: 1024px)" />
+<link href="CSS/stile_1.css" rel="stylesheet" type="text/css" media="handheld, only screen and (min-device-width: 1025px) and (max-device-width: 1200px)" />
+<link href="CSS/stampa.css" rel="stylesheet" type="text/css" media="print"/> 
+</head>
+
+<body>
+<a href="panCantina.php"><img id="logo" src="IMAGE/tornaindietro.png" alt="torna indietro"></a>
+<div id="text">
+    <h2>Inserisci un nuovo Evento</h2>
+    <form action="" method="post">
+        <div class="Dati">
+            <div class="dati1">
+                <label>Nome</label>
+                <input type="text" placeholder="inserisci nome evento" name="ename" required><br />
+            
+                <label>Cantina</label>
+                <input type="text" placeholder="inserisci nome cantina" name="cname" required>
+            </div>
+            <div class="dati2">
+                <label>Data</label>
+                <input type="date" placeholder="inserisci data evento" name="edate" required><br />
+                    
+                <label>Link</label>
+                <input type="link" placeholder="inserisci link evento" name="cname"><br />
+            </div>
+        </div>
+        <div class="Desc">
+            <label>Descrizione Evento:</label><br>
+            <textarea name="descrizione" placeholder="inserisci descrizione:" required ></textarea><br />
+        </div>
+        <div class="Conferma">
+            <button class="conferma" type="submit">Conferma</button><br /><br />
+        </div>
+    </form>
+</div>
+<div id="fine">
+	<img id="left" src="IMAGE/valid-xhtml10.png" alt="immagine validità w3c html">
+	<img id="right" src="IMAGE/vcss-blue.gif" alt="immagine validità w3c css">
+    <h7>DAILY WINE</h7>
+    <p>Per contattarci inviate una mail a: </p>
+    <p>info@dailywine.it. </p>
+    <p><span xml:lang="en">Daily Wine - All rights reserved</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmls="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<title>DAILY WINE - Without thoughts on glasses</title>
+<!-- meta: validazione e lettura da parte dei motori di ricerca -->
+<meta charset="utf-8"/>
+<meta name="description" content="Daily Wine - Segui anche tu gli Eventi della Cantina vinicola più vicina a te"/>
+<meta name="keywords" content="Daily Wine, Dayly, Wine, vini, vino, eventi, cantina, segui, accedi, registrati, italia, regioni, valle d'aosta, piemonte, liguria, lombardia, veneto, trentino alto-adige, fiuli-venezia-giulia, emilia-romagna, toscana, lazio, molise, umbria, puglia, basilicata, calabria, sicilia, sardegna, marche, abruzzo, campania "/>
+<meta name="author" content="Pigatto Andrea, Gobbo Francesco e Scialabba Daniele"/>
+<!-- link: per risorse estrene con href o rel
+base: posizione di base per i collegamenti -->
+
+<!-- foglio di stile css -->
+<link href="CSS/stile.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+<link href="CSS/mobile.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 720px)"/>
+<link href="CSS/tablet1.css" rel="stylesheet" media="handheld, only screen and (min-device-width: 721px) and (max-device-width: 1024px)" />
+<link href="CSS/stile_1.css" rel="stylesheet" type="text/css" media="handheld, only screen and (min-device-width: 1025px) and (max-device-width: 1200px)" />
+<link href="CSS/stampa.css" rel="stylesheet" type="text/css" media="print"/>  
+</head>
+
+<body>
+<div class="nav-toggle">
+	<div class="nav-toggle-bar"></div>
+</div>
+<div id="header">
+    <a href="index.php"><img id="logo" src="IMAGE/logo.png" alt="calice di vino rosso"></a>
+	<h1><span xml:lang="en">DAILY WINE</span></h1>
+    <h3><span xml:lang="en">Without thoughts on glasses</span></h3>
+	<h2><a href="accedi.php">Accedi</a> / <a href="regute.php">Registrati</a></h2>
+</div>
+<div id="menu">
+	<nav class="nav">
+		<ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a>Eventi</a></li>
+            <li><a href="topvini.html">TOP 5 Vini</a></li>
+            <li><a href="topcantine.html">TOP 5 Cantine</a></li>
+			<li><a href="cosa.html">Caratteristiche</a></li>
+            <li><a href="info.html">Chi Siamo</a></li>
+			<li><a href="contatti.php">Contatti</a></li>
+		</ul>
+	</nav>
+    <script src="nav.js"></script>
+</div>
+<div id="text">
+    <div id="trovo">
+        <p>
+            Ti trovi in: Home >> Eventi
+        </p>
+    </div>
+    <h2>Eventi!</h2>
+    <form id="evento" method="POST" action="">
+        <div class="Eve">
+            <div class="reg">
+                <label class="labita">Regione:</label>
+                    <select >
+                        <option value=""></option>
+                        <option value="valle_d_aosta">Valle d'Aosta</option>
+                        <option value="piemonte">Piemonte</option>
+                        <option value="liguria">Liguria</option>
+                        <option value="lombadia">Lombardia</option>
+                        <option value="trentino_altoa_dige">Trentino-Alto-Adige</option>
+                        <option value="veneto">Veneto</option>
+                        <option value="friuli_venezia_giulia">Friuli-Venezia Giulia</option>
+                        <option value="emilia_romagna">Emilia-Romagna</option>
+                        <option value="toscana">Toscana</option>
+                        <option value="umbria">Umbria</option>
+                        <option value="lazio">Lazio</option>
+                        <option value="marche">Marche</option>
+                        <option value="abruzzo">Abruzzo</option>
+                        <option value="molise">Molise</option>
+                        <option value="campania">Campania</option>
+                        <option value="puglia">Puglia</option>
+                        <option value="basilicata">Basilicata</option>
+                        <option value="calabria">Calabria</option>
+                        <option value="sardegna">Sardegna</option>
+                        <option value="sicilia">Sicilia</option>
+                    </select>
+            </div>
+            <div class="prov">
+                <label class="labita">Provincia:</label>
+                    <input id="provincia" type="prov" name="provincia" placeholder="inserisci provincia"  tabindex="1">
+            </div>
+            
+            <div class="ric">
+                    <button class="ricerca" value="ricerca" type="submit"></button><br />
+            </div>
+        </div>
+    </form>
+    <p>Qui verranno inseriti gli eventi</p>
+    <div class="event" id="event">
+        <h4 class="nome">Festa del Torcolato di Breganze</h4>
+            <div class="inf1">
+                <h5>Data:</h5><p id="dataevento">gg/mm/aaaa</p>
+            </div>
+            <div class="inf2">
+                <h5>Cantina:</h5><p id="link1"><a href="#">Cantina Beato Bartolomeo di Breganze</a></p>
+            </div>
+            <div class="inf3">
+                <h5 class="id3">Per saperne di più:</h5><p id="link2"><a href="#">Link all'evento</a></p>
+            </div>
+            <div class="desc">
+            <p id="desc1">Descrizione:</p><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+    </div>
+    <div class="event" id="event">
+        <h4 class="nome">Festa del Torcolato di Breganze</h4>
+            <div class="inf1">
+                <h5>Data:</h5><p id="dataevento">gg/mm/aaaa</p>
+            </div>
+            <div class="inf2">
+                <h5>Cantina:</h5><p id="link1"><a href="#">Cantina Beato Bartolomeo di Breganze</a></p>
+            </div>
+            <div class="inf3">
+                <h5 class="id3">Per saperne di più:</h5><p id="link2"><a href="#">Link all'evento</a></p>
+            </div>
+            <div class="desc">
+            <p id="desc1">Descrizione:</p><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+    </div>
+    <h3> <a href="eventi.html"> &laquo;Torna su </a></h3>
+</div>
+    
+<div id="fine">
+	<img id="left" src="IMAGE/valid-xhtml10.png" alt="immagine validità w3c html">
+	<img id="right" src="IMAGE/vcss-blue.gif" alt="immagine validità w3c css">
+    <h7>DAILY WINE</h7>
+    <p>Per contattarci inviate una mail a: info@<span xml:lang="en">dailywine</span>.it. </p>
+    <p><span xml:lang="en">Daily Wine - All rights reserved</span></p>
+</div>
+</body>
+</html>

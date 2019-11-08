@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmls="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+    <head>
+        <title>DAILY WINE - Without thoughts on glasses</title>
+    <!-- meta: validazione e lettura da parte dei motori di ricerca -->
+        <meta charset="utf-8"/>
+        <meta name="description" content="Daily Wine - In qualsiasi momento una cantina vinicola vicina a te"/>
+        <meta name="keywords" content="cantina, vino, daily, wine, italia, regioni, valle d'aosta, piemonte, liguria, lombardia, veneto, trentino alto-adige, fiuli-venezia-giulia, emilia-romagna, toscana, lazio, molise, umbria, puglia, basilicata, calabria, sicilia, sardegna, marche, abruzzo, campania, cantina vinicola, accedi, registrati, entra a far parte, più informazioni, gestisci la tua cantina, informazioni, gestisci, parte"/>
+        <meta name="author" content="Pigatto Andrea, Gobbo Francesco e Scialabba Daniele"/>
+    <!-- link: per risorse estrene con href o rel base: posizione di base per i collegamenti -->
+
+        <!-- foglio di stile css -->
+        <link href="CSS/stile.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+        <link href="CSS/stile_1.css" rel="stylesheet" type="text/css" media="handheld, screen and (min-width: 1367px) and (max-width:1920px), only screen and (min-device-width: 1367px) and (max-device-width: 1920px)" />
+        <link href="CSS/mobile.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width: 720px), only screen and (max-device-width: 720px)"/>
+        <link href="CSS/tablet.css" rel="stylesheet" media="handheld, screen (max-width:1024px), only screen and (min-device-width: 721px) and (max-device-width: 1024px)" />
+        <link href="CSS/stampa.css" rel="stylesheet" type="text/css" media="print"/>  
+    <!-- Script --> 
+    </head>
+
+<body>
+    <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+    </div>
+    <div id="header">
+        <a href="index.php"><img id="logo" src="IMAGE/logo.png" alt="calice di vino rosso"></a>
+        <h1><span xml:lang="en">DAILY WINE</span></h1>
+        <h3><span xml:lang="en">Without thoughts on glasses</span></h3>
+        <h2>
+    <!-- <?php
+      //controllo se è utente oppure cantina
+        if($_SESSION['tipo']== 'Utente')
+            echo "<h2>".$_SESSION['nome']." - <a href='PHP/logout.php'>Logout</a></h2>";
+        else if($_SESSION['tipo']== 'Cantina')
+                echo "<h2><a href='PHP/logout.php'>Logout</a></h2>";
+            else
+                echo " <h2><a href='accedi.php'>Accedi</a> / <a href='regute.php'>Registrati</a></h2>";
+    ?> -->
+        </h2>
+    </div>
+    
+    <div id="menu">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="eventi.php">Eventi</a></li>
+                <li><a href="topvini.php">TOP 5 Vini</a></li>
+                <li><a href="topcantine.php">TOP 5 Cantine</a></li>
+                <li><a href="cosa.php">Caratteristiche</a></li>
+                <li><a href="info.php">Chi Siamo</a></li>
+                <li><a href="contatti.php">Contatti</a></li>
+            </ul>
+        </nav>
+        <script src="nav.js"></script>
+    </div>
+    <div id="text">
+        <div id="trovo">
+            <p>
+                Ti trovi in: Home >> Ricerca
+            </p>
+        </div>
+        <h2>Ricerca</h2>
+        <form>
+            <div class="Ricerca">
+                <div class="regione">
+                    <label class="genere" for="regione">Regione:</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="tutta italia">Tutta Italia</option>
+                            <option value="" disabled>-----------------</option>
+                            <option value="valle_d_aosta">Valle d'Aosta</option>
+                            <option value="piemonte">Piemonte</option>
+                            <option value="liguria">Liguria</option>
+                            <option value="lombadia">Lombardia</option>
+                            <option value="trentino_altoa_dige">Trentino-Alto Adige</option>
+                            <option value="veneto">Veneto</option>
+                            <option value="friuli_venezia_giulia">Friuli-Venezia Giulia</option>
+                            <option value="emilia_romagna">Emilia-Romagna</option>
+                            <option value="toscana">Toscana</option>
+                            <option value="umbria">Umbria</option>
+                            <option value="lazio">Lazio</option>
+                            <option value="marche">Marche</option>
+                            <option value="abruzzo">Abruzzo</option>
+                            <option value="molise">Molise</option>
+                            <option value="campania">Campania</option>
+                            <option value="puglia">Puglia</option>
+                            <option value="basilicata">Basilicata</option>
+                            <option value="calabria">Calabria</option>
+                            <option value="sardegna">Sardegna</option>
+                            <option value="sicilia">Sicilia</option>
+                        </select>
+                </div>
+                <div class="provincia">
+                    <label class="genere" for="provincia">Provincia:</label>
+                        <input id="provincia" type="prov" name="provincia" placeholder="inserisci provincia"  tabindex="1">
+                </div>
+                <div class="tipivini">
+                    <label class="genere" for="tipo vino">Tipo vino:</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="aromatizzato">Aromatizzato</option>
+                            <option value="bianchi">Bianco</option>
+                            <option value="barricato">Barricato</option>
+                            <option value="frizzante">Frizzante</option>
+                            <option value="liquorosi">Liquoroso</option>
+                            <option value="novelli">Novello</option>
+                            <option value="passiti">Passito</option>
+                            <option value="rosati">Rosato</option>
+                            <option value="rossi">Rosso</option>
+                            <option value="ruspo">Ruspo</option>
+                            <option value="spumanti">Spumante</option>
+                        </select>
+                </div>
+                <div class="lente">
+                        <button name="ricerca" class="ricercalente" value="ricerca" type="submit"></button><br/>
+                </div>
+            </div>
+        </form>
+        <div class="cantina">
+            <dl>
+                <dt id="nomecant"><a href="#">Cantina Beato Bartolomeo</a></dt>
+                    <dd id="localita">Località:</dd><p id="infocl">Breganze - VI</p>
+                    <dd id="votomed">Voto medio:</dd><p id="infoc">5/5</p>
+                    <dd id="tipvin">Tipi di vino:</dd><p id="infoc">Rosso, Passito, Novello, Aromatizzato, Bianco, Barricato, Frizzante, Liquoroso, Rosato, Ruspo, Spumante</p>
+            </dl>
+        </div>
+        <div class="cantina">
+            <dl>
+                <dt id="nomecant"><a href="#">Cantina Beato Bartolomeo</a></dt>
+                    <dd id="localita">Località:</dd><p id="infocl">Breganze - VI</p>
+                    <dd id="votomed">Voto medio:</dd><p id="infoc">5/5</p>
+                    <dd id="tipvin">Tipi di vino:</dd><p id="infoc">Rosso, Passito, Novello, Aromatizzato, Bianco, Barricato, Frizzante, Liquoroso, Rosato, Ruspo, Spumante</p>
+            </dl>
+        </div>
+        <h3> <a href="ricerca.html"> &laquo;Torna su </a></h3>
+    </div>
+    <div id="fine">
+        <img id="left" src="IMAGE/valid-xhtml10.png" alt="immagine validità w3c html">
+        <img id="right" src="IMAGE/vcss-blue.gif" alt="immagine validità w3c css">
+        <h7>DAILY WINE</h7>
+        <p>Per contattarci inviate una mail a: info@<span xml:lang="en">dailywine</span>.it. </p>
+        <p><span xml:lang="en">Daily Wine - All rights reserved</span></p>
+    </div>
+</body>    
+</html>

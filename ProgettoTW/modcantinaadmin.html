@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmls="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<title>DAILY WINE - Without thoughts on glasses</title>
+<!-- meta: validazione e lettura da parte dei motori di ricerca -->
+<meta charset="utf-8"/>
+<meta name="description" content="Daily Wine - Pannello Cantina, pagina personale dei dati e descrizione con possibilità di modifica"/>
+<meta name="keywords" content="Daily Wine, Dayly, Wine, vini, vino, cantina, segui, italia, regione, provincia, città, telefono, indirizzo, voto, modifica dati, modifica, pannello cantina, pannello, pagina personale, home, descrizione, dati"/>
+<meta name="author" content="Pigatto Andrea, Gobbo Francesco e Scialabba Daniele"/>
+<!-- link: per risorse estrene con href o rel
+base: posizione di base per i collegamenti -->
+
+<!-- foglio di stile css -->
+<link href="CSS/adminmodifica.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+<link href="CSS/mobileamm.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 720px)"/>
+<link href="CSS/tablet1.css" rel="stylesheet" media="handheld, only screen and (min-device-width: 721px) and (max-device-width: 1024px)" />
+<link href="CSS/stile_1.css" rel="stylesheet" type="text/css" media="handheld, only screen and (min-device-width: 1025px) and (max-device-width: 1200px)" />
+<link href="CSS/stampa.css" rel="stylesheet" type="text/css" media="print"/>  
+</head>
+
+<body>
+<div id="header">
+    <a href="panAdmin.php"><img id="tornaindietro" src="IMAGE/tornaindietro.jpg" alt="torna indietro"></a>
+	<h1>NOME CANTINA</h1>
+</div>
+<div id="text">
+    <h1>Pagina Cantina</h1>
+    <form class="dati" method="get">
+        <h4>Dati della cantina</h4>
+        <label for="regione">Regione:</label>
+        <input id="inputcant" type="text" name="regione" value="Veneto" disabled tabindex="2"><br>
+        
+        <label for="provincia">Padova:</label>
+        <input id="inputcant" type="text" name="provincia" value="Padova" disabled tabindex="3"><br>
+        
+        <label for="citta">Città:</label>
+        <input id="inputcant" type="text" name="citta" value="Padova" disabled tabindex="4"><br>
+        
+        <label for="indirizzo">Indirizzo:</label>
+        <input id="inputcant" type="text" name="indirizzo" value="Via Luzzati, 13" disabled tabindex="5"><br>
+        
+        <label for="telefono">Telefono:</label>
+        <input id="inputcant" type="text" name="telefono" value="+34356357686" disabled="active" tabindex="6"><br>
+        
+        <button class="mod" type="submit" nome="modifica" value="Modifica Dati" tabindex="1">Modifica</button>
+        
+        <button class="ok" type="submit" nome="fatto" value="Fatto" tabindex="7">Fatto</button><br>
+    </form>
+    <div class="votazione">
+        <h4>Voto Medio</h4>
+        <h5>3/5</h5>
+    </div>
+    <form class="DESC">
+        <label for="descrizione">DESCRIZIONE</label><br>
+        <textarea name="descrizione" rows="20" cols="400" readonly tabindex="9">SI sostituisce al codice p e si modifica il testo reinviando i nuovi dati al DB.
+        </textarea><br>
+        
+        <button type=”submit” value="Modifica Descrizione" class="mod2" name="modifica2" tabindex="8">Modifica</button>
+        
+        <button class="ok" type="submit" nome="fatto" value="Fatto" tabindex="10">Fatto</button><br>
+    </form>
+    <div class="prod">
+        <h4>La nostra Produzione</h4>
+        <!--QUI sotto stamperemo l'elenco puntato mostrato solo dopo il click del bottone Fatto, oppure subito dopo aver aggiunto il vino. -->
+        <ul>
+            <li>Cabernet - Vino Rosso</li>
+            <li>Ferrari - Spumante Frizzante</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmls="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<title>DAILY WINE - Without thoughts on glasses</title>
+<!-- meta: validazione e lettura da parte dei motori di ricerca -->
+<meta charset="utf-8"/>
+<meta name="description" content="Daily Wine - Scheda generale della Cantina con i dati, descrizione e possibilità di inserire una recensione"/>
+<meta name="keywords" content="Daily Wine, Dayly, Wine, vini, vino, cantina, segui, italia, regione, provincia, città, indirizzo, telefono, voto, recensione, descrizione, pagina dedicata, informazioni"/>
+<meta name="author" content="Pigatto Andrea, Gobbo Francesco e Scialabba Daniele"/>
+<!-- link: per risorse estrene con href o rel
+base: posizione di base per i collegamenti -->
+
+<!-- foglio di stile css -->
+<link href="CSS/stilecant.css" rel="stylesheet" type="text/css" media="handheld, screen"/>
+<link href="CSS/stile_1.css" rel="stylesheet" type="text/css" media="handheld, screen and (min-width: 1367px) and (max-width:1920px), only screen and (min-device-width: 1367px) and (max-device-width: 1920px)" />
+<link href="CSS/mobilecant.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width: 720px), only screen and (max-device-width: 720px)"/>
+<link href="CSS/tabletcant.css" rel="stylesheet" media="handheld, screen (max-width:1024px), only screen and (min-device-width: 721px) and (max-device-width: 1024px)" />
+<link href="CSS/stampa.css" rel="stylesheet" type="text/css" media="print"/>   
+</head>
+
+<body>
+<div id="header">
+    <a href="javascript:history.go(-1)"><img id="tornaindietro" src="IMAGE/tornaindietro.png" alt="torna indietro"></a>
+	<h1>CANTINA</h1>
+</div>
+<div id="text">
+    <h1>Pagina Cantina</h1>
+    <div class="dati">
+        <h4>Dati della cantina</h4>
+        <h6>Regione:</h6>
+        <p id="datcant">Veneto</p>
+        <h6>Provincia:</h6>
+        <p id="datcant">Padova</p>
+        <h6>Città:</h6>
+        <p id="datcant">Padova</p>
+        <h6>Indirizzo:</h6>
+        <p id="datcant">via Luzzatti 3</p>
+        <h6>Telefono:</h6>
+        <p id="datcant">+34356357686</p>
+    </div>
+    <div class="votazione">
+        <h4>Voto Medio</h4>
+        <h5>3/5</h5>
+    </div>
+    <div>
+        <h4 id="desc">Descrizione</h4>
+        <p id="descrizione">Mi ci butti la variabile che conterrà la recensione inserita dall'utente e quindi poi mi stamperà tutto il testo che sarà presente. In questo sito vogliamo dare largo spazio a tutte le cantine situate nel nostro Paese promuovendo quello che è il loro lavoro, ovvero la produzione di vino con l'opportunità di farlo conoscere ed assaggiare a tutti. In Italia si producono in media sui 51 milioni di ettolitri l'anno e di questi più della metà viene destinata ad esportazione sia in Europa che in America. Il vino prodotto deriva da 770.000 aziende produttrici e solo 1.200 di esse sono anche esportatrici. Con gli anni si è avuta una crescita della qualità dei vini e quindi non più una produzione di quantità, in particolare quelli italiani che videnzia la progressiva trasformazione del prodotto da commodity a prodotto ad alto valore aggiunto. tendenza dovuta anche al fatto che il vino, un tempo considerato "alimento", è poi divenuto "bene voluttuario" ed oggi è visto come prodotto di "grande fascino" servito in molti ristoranti anche rinomati. Il Vino Bianco, che viene prodotto con la tecnica della spremitura soffice dell'acino d'uva bianca. Si presenta all'aspetto di colore giallo in varie tonalità; è generalmente caratterizzato da profumi floreali e fruttati va consumato ad una temperatura di servizio compresa fra 8 °C e 14 °C; al gusto prevalgono le sensazioni di freschezza e acidità. Gli accoppiamenti ottimali sono con le pietanze a base di pesce, molluschi, verdure e carni bianche. Il Vino Rosato, che si produce utilizzando uve rosse spremute in modo soffice come per il vino bianco ed un veloce contatto con le bucce. Si presenta all'aspetto di colore rosa tenue; è generalmente caratterizzato da profumi fruttati, e va consumato ad una temperatura di servizio compresa fra 10 °C e 14 °C; al gusto prevalgono le sensazioni di leggera acidità, di aromaticità e di lieve corposità. Gli accoppiamenti ottimali sono con pietanze gustose a base di pesce, paste asciutte con sughi delicati, salumi leggeri. Il Vino Rosso, che si presenta all'aspetto di colore rosso in varie tonalità e viene prodotto dal mosto fatto macerare sulle bucce.
+        </p>
+    </div>
+    
+    <!-- Verrà inserito l'elenco puntato soltanto se nel data base c'è qualcosa -->
+    <div class="prod1">
+        <h4>La nostra Produzione</h4>
+        <!--QUI sotto stamperemo l'elenco puntato mostrato solo dopo il click del bottone Fatto, oppure subito dopo aver aggiunto il vino. -->
+        <ul>
+            <li>Cabernet - Vino Rosso</li>
+            <li>Ferrari - Spumante Frizzante</li>
+        </ul>
+    </div>
+    
+    
+    <div class="RECUT">
+        <h4>Recensioni</h4>
+    </div>
+    <div class="rec2" id="rec2">
+            <h4 class="nome">Valutazione Generale</h4>
+            <div class="inf4">
+                <h5>Utente:</h5><p id="idut">Nome</p>
+            </div>
+            <div class="inf5">
+                <h5>Voto:</h5><p id="vot">4/5</p>
+            </div>
+            <div class="desc2">
+                <h5 id="rech5">Recensione:</h5>
+                <p id="recensione">Mi ci butti la variabile che conterrà la recensione inserita dall'utente e quindi poi mi stamperà tutto il testo che sarà presente.
+                </p>
+            </div>
+    </div>
+    <div class="rec2" id="rec2">
+        <h4 class="nome">Inserisci una Recensione</h4>
+        <form class="NewRec" method="post">
+            <!-- bisogna valutare ovviamente se è presente una sessione aperta con un login effettuato, nel caso ci fosse il nome utente verrebbe già stampato e avremo dunque una input text riempita col suo nome, qualora non lo fosse, dovrebbe loggarsi e quindi all'invio del tasto Conferma, dovrà essere rimandato alla pagina di Accedi per accedere anche se cmq l'utente non loggato può inserire i dati senza saperlo prima. --> 
+            
+            <!-- parte dell'utente non loggato -->
+            <label for="valutazione">Valutazione generale:</label>
+            <input id="valutazione" type="text" placeholder="Inserisci valutazione" name="valutazione" required tabindex="1"><br />
+            
+            <label for="utente">Utente:</label>
+            <input id="utente" type="text" placeholder="inserirsci nome" name="utente" required tabindex="2">
+            
+            <label for="voto">Voto:</label>
+            <select id="voto" type="text" name="voto" placeholder="voto da 1 a 5" required tabindex="3">
+                <option value="0">0</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+            </select><br>
+            
+            <label for="recensione">Recensione:</label>
+            <textarea name="recensione" rows="8" cols="400" placeholder="inserisci la tua recensione" required tabindex="4"></textarea><br/>
+            
+            <button class="conferma" name="conferma" value="Conferma" type=”submit” tabindex="5">CONFERMA</button>
+            
+            <button class="annulla" name="annulla" value="Annulla" type=”reset” tabindex="6">ANNULLA</button>
+        </form>
+    </div>
+</div>
+<div id="fine">
+	<img id="left" src="IMAGE/valid-xhtml10.png" alt="immagine validità w3c html">
+	<img id="right" src="IMAGE/vcss-blue.gif" alt="immagine validità w3c css">
+    <h7>DAILY WINE</h7>
+    <p>Per contattarci inviate una mail a: info@<span xml:lang="en">dailywine</span>.it. </p>
+    <p><span xml:lang="en">Daily Wine - All rights reserved</span></p>
+</div>
+</body>
+</html>
