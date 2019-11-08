@@ -1,0 +1,216 @@
+/* 
+================
+SEZIONE GENERALE
+================
+*/
+
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body {
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background-color: #6b393e;
+}
+a:hover{
+    text-decoration: underline;
+    color:#E0A175;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#text a:hover{
+    color:saddlebrown;
+}
+#text a{
+    color:#ff4547;
+}
+
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+#header{
+    text-align: left;
+    background-color: #6b393e;
+    min-height: 6em;
+    padding: 4em 0em 3em 3em;
+    position:relative;
+}
+#logo{
+    float: left;
+    position: absolute;
+    width:12%;
+    left: 44%;
+    top: 10%;
+}
+/*
+===================
+SEZIONE TESTO
+===================
+*/
+#text .errore{
+    color: red;
+    font-size: 0.8em;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    float: left;
+    font-weight: bold;
+}
+
+#text {
+    border-radius: .7em;
+    margin-left: 25%;
+    margin-right: 10%;
+    width: 40%;
+    padding: 2% 5% 5% 5%;
+    font-size: 0.9em;
+    border-left: 1px solid #DDD;
+    text-align: justify;
+    background-color: blanchedalmond;
+    position: relative;
+}
+#text h2{
+    margin-top: 0.5em;
+    margin-bottom: 3%;;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4547;
+}
+#text p {
+    margin-bottom: 2%;
+    text-align:justify;
+    margin-left: 1em;
+    padding-right:5%;
+}
+
+
+input[type=text], input[type=date], input[type=link] {
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    padding: 1.7%;
+}
+
+textarea {
+    width: 87%;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: .4em;
+    background-color: white;
+    resize: none;
+    margin-bottom: 4%;
+    margin-left:7.7%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 40%;
+    margin-left: 8%;
+}
+.dati1{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+.dati2{
+    float: left;
+    width: 45%;
+    margin-bottom: 20%;
+}
+.conferma {
+    background-color: #696969;
+    color: white;
+    font-weight: bold;
+    padding: 3%;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    border-radius: .7em;
+    margin-left: 15%;
+}
+input{
+    margin-left: 8%;
+}
+.conferma:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Dati {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    text-align: left;
+}
+
+.Desc {
+    padding-top:45%;
+    padding-right:4%;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+
+.Conferma {
+    padding-top:1%;
+    padding-left:4%;
+    padding-right:4%;
+    border-bottom:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+    border-bottom-left-radius: .7em;
+    border-bottom-right-radius: .7em;
+}
+
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    font-size: 0.8em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    color:white;
+    font-style:oblique;
+}
+#fine h7{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+#left{
+    float: left;
+    margin-left: 20%;
+}
+#right{
+    margin-right: 20%;
+    float: right;
+}

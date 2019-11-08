@@ -1,0 +1,848 @@
+/* 
+================
+SEZIONE GENERALE
+================
+*/
+
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body {
+    max-width: 1024px;
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+body {
+    border: 1px solid #DDD;
+    background-color: #6b393e;
+}
+a:hover{
+    text-decoration: underline;
+    color:#E0A175;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+#header a{
+    color:white;
+}
+#header a:hover{
+    color:darkorange;
+}
+#text a:hover{
+    color:cornflowerblue;
+}
+#text a{
+    color:#911f7c;
+}
+#text a:visited{
+    color:saddlebrown;
+}
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+#header{
+    text-align: center;
+    min-height: 6em;
+    padding: 4em 0em 3em 3em;
+    background-image: url('../IMAGE/Degustazione.jpg');
+    background-position: center;
+    background-size: 100%;
+    position:relative;
+}
+
+#logo{
+    float:left;
+    width:10%;
+    position: absolute;
+    top:10%;
+    left:2.5%;
+}
+
+#header h1 {
+    color: #ff4547;
+    font-size:3.5em;
+}
+#header h2 {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    position:absolute; 
+    bottom:2%; 
+    left: 80%;
+    color: white;
+}
+#header h3 {
+    font-size: 100%;
+    font-style: oblique;
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+}
+/*
+===================
+SEZIONE MENU
+===================
+*/
+#menu {
+    clear:both;
+    float:left;
+    width:20%;
+    margin:0%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#menu ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#menu a {
+    display:block;
+    color:white;
+    line-height:2.5em;
+    height:auto!important;
+    height:0;
+    border-bottom:1px solid white;
+    text-decoration:none;
+    padding:0 0 0 10%;
+    background-color: #8a4b51;
+}
+
+#menu a:focus, #menu a:hover, #menu a:active {
+    color:#8a4b51;
+    border-left:10px solid white;
+    padding:0 0 0 5%;
+    background-color:white;
+}
+/*
+===================
+SEZIONE TESTO
+===================
+*/
+#push{
+	clear:both;
+    height:50px;
+}
+.errore, #textconta .errore{
+    color: red;
+    margin-left: 15%;
+    font-weight: bold;
+}
+#trovo{
+    display: none;
+}
+#text{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%; 
+    
+    margin-left: 20%;
+    width: 70%;
+    padding: 2% 4% 5.3% 5.9%;
+    font-size: 0.9em;
+    border-left: 1px solid #DDD;
+    text-align: justify;
+    background-color: blanchedalmond;
+    position: relative;
+}
+#text h1{
+    color: #ff4547;
+    font-size:3.5em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#text h2{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 100%;
+    text-align: left;
+    color:darkgoldenrod;
+}
+#text h3{
+    position:absolute; 
+    bottom:1%; 
+    left: 85%;
+}
+#text h4{
+    margin-top:0%;
+    margin-bottom: 2%;
+}
+#text h5{
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 2%;
+    color: darkgray;
+}
+#text p {
+    margin-bottom: 2%;
+    text-align:justify;
+    margin-left: 1em;
+    padding-right:5%;
+}
+#text h6{
+    text-align: center;
+    color: #6b393e;
+    font-size: 130%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+/* ----------- INDEX -------------*/
+.top{
+    margin-top: 70%;
+    text-align: center;
+}
+.tvini{
+    background-image: url('../IMAGE/vini1.jpg');
+    background-size:100% ;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding:8%;
+    width: 40%;
+    margin-top: 2%;
+    margin-right: 4%;
+    border-radius: .7em;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.tcant{
+    background-image: url('../IMAGE/topcant.jpg');
+    background-size:100% ;
+    padding:8%;
+    width: 40%;
+    font-size: 1.9em;
+    font-weight: bold;
+    border-radius: .7em;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.cant{
+    margin-top: 10%;
+    text-align: center;
+}
+.link{
+    float: left;
+    margin-top: 2%;
+}
+.link ul{
+    list-style-type: none;
+}
+.tutta{
+    margin-bottom: 7%;
+}
+#text .top h6, #text .cant h6{
+    text-align: center;
+    color:darkgoldenrod ;
+    font-size:90%;
+    font-weight: bold;
+}
+#mappaitalia{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+}
+#text .link a:hover{
+    color:cornflowerblue;
+}
+.info:hover {
+    opacity: 0.5;
+}
+.info{
+    background-color: #6b393e; 
+    opacity:0.6;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-bottom: 2%;
+    width: 50%;
+    border: 2px solid black;
+    margin-top: 2%;
+    border-radius: .7em;
+}
+.info:hover {
+    background-color:#6b393e;
+    color: white;
+}
+
+/* ----------- MAPPA -------------*/
+	#mappa img{
+	   border:none;
+	}
+	#mappa{
+        width:50%;
+        margin-left: 40%;
+        position:relative;
+        margin-top: 10%;
+	}
+	#mappa a{
+        text-decoration:none;
+        color:#000000;
+        outline:none;
+	}
+	#mappa a img.regioneitalia{
+        position:absolute;
+        display:block;
+	}
+	#mappa a:hover img.regioneitalia{
+        filter:alpha(opacity=60);
+        -moz-opacity:.60;
+        opacity:.60;
+	}
+	#aosta{
+	left:5px;
+	top:37px;
+	z-index:1;
+	}
+	#piemonte{
+	left:2px;
+	top:27px;
+	}
+	#liguria{
+	left:20px;
+	top:77px;
+	}
+	#lombardia{
+	left:41px;
+	top:19px;
+	}
+	#trentino{
+	left:80px;
+	top:3px;
+	z-index:1;
+	}
+	#veneto{
+	left:85px;
+	top:15px;
+	}
+	#friuli{
+	left:120px;
+	top:15px;
+	z-index:1;
+	}
+	#romagna{
+	left:55px;
+	top:62px;
+	}
+	#toscana{
+	left:66px;
+	top:81px;
+	}
+	#marche{
+	left:118px;
+	top:96px;
+	}
+	#umbria{
+	left:113px;
+	top:108px;
+	}
+	#lazio{
+	left:105px;
+	top:132px;
+	}
+	#abruzzo{
+	left:139px;
+	top:128px;
+	}
+	#molise{
+	left:160px;
+	top:152px;
+	z-index:1;
+	}
+	#puglia{
+	left:182px;
+	top:154px;
+	}
+	#campania{
+	left:158px;
+	top:169px;
+	}
+	#basilicata{
+	left:194px;
+	top:179px;
+	z-index:1;
+	}
+	#calabria{
+	left:205px;
+	top:210px;
+	}
+	#sardegna{
+	left:30px;
+	top:175px;
+	}
+	#sicilia{
+	left:130px;
+	top:270px;
+	}
+
+/* ----------- RICERCA -------------*/
+.cantina{
+    border : 5px double Black;
+    margin-top: 1%;
+    padding:2%;
+    padding-bottom:10%;
+    margin-bottom: 4%;
+}
+#text .cantina .nomecant{
+    color: #410012;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+.cantina .votomed{
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 1%;
+    margin-left:5%;
+    font-weight: bold;
+}
+.cantina .localita{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: left;
+    font-weight: bold;
+}
+.cantina .infocl{
+    float: left;
+    margin-top: 3%;
+}
+.cantina .infoc{
+    margin-top: 4%;
+}
+.ricerca {
+    cursor: pointer;
+    margin-left: 20%;
+    background-image: url('../IMAGE/lente.jpg');
+    background-size: 100%;
+    padding:9%;
+    border-radius: .7em;
+}
+.genere{
+    font-weight: bold;
+    font-size: 110%;
+    margin-left:0%;
+}
+select{
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.regione {
+    float: left;
+    width: 30%;
+    margin-top:2%;
+}
+.provincia{
+    float: left;
+    width: 45%;
+    margin-top:2%;
+}
+.provincia input[type=text]{
+	width:65%;
+    margin-top:0%;
+    padding:2%;
+    margin-left:2%;
+}
+.lente{
+    margin-left: 80%;
+    width: 30%;
+    margin-bottom: 5%;
+}
+.ricercalente{
+    cursor: pointer;
+    background-image: url('../IMAGE/lente.jpg');
+    background-size: 100%;
+    padding:9%;
+    border-radius: .7em;
+}
+.cantine{
+    border: solid;
+    border-color: #410012;
+}
+dl{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*----------- INFO --------------*/
+#vini {
+    width: 95%;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}
+
+/*----------- COSA ---------------*/
+#cosa {
+    max-width: 60%;
+    margin-left:19%;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}
+
+/*----------- CONTATTI --------------*/
+.buono{
+    margin-bottom: 30%;
+}
+#textconta h1{
+    color: #ff4547;
+    font-size:3.5em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#textconta{
+    margin-left: 20%;
+    width: 70%;
+    padding: 2% 4% 5.3% 5.9%;
+    font-size: 0.9em;
+    border-left: 1px solid #DDD;
+    text-align: justify;
+    background-color: blanchedalmond;
+    position: relative;
+}
+#textconta p {
+    margin-bottom: 2%;
+    text-align:justify;
+    margin-left: 1em;
+    padding-right:5%;
+}
+#grazie{
+    text-align: center;
+    color:darkgoldenrod ;
+    font-size:110%;
+    font-weight: bold;
+}
+#textconta h6{
+    text-align: center;
+    color: #6b393e;
+    font-size: 130%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+#contatto{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.mydata {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.invio {
+    padding-left:4%;
+    padding-right:4%;
+    padding-bottom: 4%;
+    border-bottom-left-radius: .7em;
+    border-bottom-right-radius: .7em;
+    border-bottom:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.contatti{
+    background-color: #696969;
+    color: white;
+    padding: 3%;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    border-radius: .7em;
+    margin-left: 15%;
+}
+.contatti:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=email], input[type=text]{
+    width: 70%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 1%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 15%;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 40%;
+    margin-left: 15%;
+}
+textarea {
+    width: 70%;
+    padding:3%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+/*------------- EVENTI -------------*/
+.ricerca {
+    cursor: pointer;
+    margin-left: 20%;
+    background-image: url('../IMAGE/lente.jpg');
+    background-size: 100%;
+    padding:9%;
+    border-radius: .7em;
+}
+.labita{
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 5%;
+}
+select{
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.reg {
+    float: left;
+    width: 30%;
+    margin-top:2%;
+}
+.prov{
+    float: left;
+    width: 40%;
+    margin-top:2%;
+}
+.prov input[type=text]{
+	width:59%;
+    margin-top:0%;
+    padding:2%;
+    margin-left:2%;
+}
+.ric{
+    float: left;
+    width: 30%;
+    margin-bottom: 5%;
+}
+#evento {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 15%;
+}
+.event{
+    border-color: #410012;
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 3%;
+    margin: 3%;
+}
+.nome{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    border-bottom-width: 1px;
+    border-color: #410012;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: #410012;
+    text-align: center;
+    color:white;
+}
+.inf1{
+    float:left;
+    width: 35%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.inf2{
+    float:right;
+    width: 55%;
+}
+.inf3{
+    float:left;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+#text .event .inf3 .id3{
+    margin-left: 1.5%;
+}
+#text .event h5{
+    float: left;
+    margin-left: 4%;
+    margin-right: 2%;
+    font-size: 1em;
+    color: #9e454d;
+}
+#dataevento{
+    font-size: 0.8em;
+    margin-top: 2.5%;
+}
+#link1{
+    font-size: 0.8em;
+    margin-top: 2.5%;
+}
+#text .link2{
+    font-size: 0.8em;
+    margin-top: 2.3%;
+}
+.desc1{
+    color: black;
+    font-weight: bold;
+}
+.desc{
+    border-radius: .7em;
+    border: 1px solid #410012;
+    background-color: floralwhite;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 14.5%;
+    margin-bottom: 3%;
+    word-wrap:break-word;
+}
+/*-------------- VINI E CANTINE --------------*/
+#text dt{
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size:100%;
+    margin-top: 2em;
+}
+#text dd, dt{
+   text-align:justify;
+}
+#text dd{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#oreno{
+    float: left;
+    width: 10%;
+    margin-top: 1%;
+    margin-bottom: 15%;
+    padding-left: 0.5em;
+    padding-right: 2em;
+}
+#terlano{
+    float: left;
+    width: 10%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 4%;
+    margin-bottom: 10%;
+}
+#ferrari{
+    float: left;
+    width: 11.5%;
+    margin-top: 1%;
+    margin-bottom:18%;
+    margin-left: 1%;
+    margin-right: 2.5%;
+}
+#barolo{
+    float: left;
+    width: 10%;
+    margin-top: 1%;
+    margin-bottom: 18%;
+    margin-left: 1%;
+    margin-right: 4%;
+}
+#brunello{
+    float: left;
+    width: 10%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 4%;
+    margin-bottom:20%;
+}
+#regn{
+    float: right;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 60%;
+}
+#cadgal{
+    float: right;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 35%;
+}
+#quintarelli{
+    float: right;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 32%;
+}
+#stoppa{
+    float: right;
+    width: 30%;
+    margin-top: 8%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 20%;
+}
+#ferr{
+    float: right;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 45%;
+}
+
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    font-size: 0.8em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    background-color: #404040;
+    color:white;
+    font-style:oblique;
+}
+#fine h6{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+#left{
+    float: left;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+#right{
+    margin-right: 20%;
+    margin-top: 1%;
+    float: right;
+}

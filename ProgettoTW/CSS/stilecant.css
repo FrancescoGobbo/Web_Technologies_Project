@@ -1,0 +1,606 @@
+/* 
+================
+SEZIONE GENERALE
+================
+*/
+
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body {
+    max-width: 1024px;
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+body {
+    border: 1px solid #DDD;
+    background-color: #592b30;
+}
+a:hover{
+    text-decoration: underline;
+    color:#E0A175;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+#header a{
+    color:white;
+}
+#header a:hover{
+    color:darkorange;
+}
+#text a:hover{
+    color:cornflowerblue;
+}
+#text a{
+    color:#911f7c;
+}
+#text a:visited{
+    color:saddlebrown;
+}
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+#header{
+    text-align: center;
+    min-height: 4em;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:10%;
+    padding-right:10%;
+    position:relative;
+    background-color: #410012;
+}
+
+#tornaindietro{
+    float:left;
+    width:7%;
+    position: absolute;
+    top:25%;
+    left:2.5%;
+}
+
+#header h1 {
+    color: #ff4547;
+    font-size:3em;
+}
+/*
+===================
+SEZIONE TESTO
+===================
+*/
+#erNome{
+    color: red;
+    margin-left: 27%;
+    font-weight: bold;
+}
+#erTipo{
+    color: red;
+    margin-left: 23.5%;
+    font-weight: bold;
+}
+#text{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%; 
+    
+    
+    width: 90%;
+    padding: 2% 4% 5.3% 5.9%;
+    font-size: 0.9em;
+    border-left: 1px solid #DDD;
+    text-align: justify;
+    background-color: blanchedalmond;
+    position: relative;
+}
+#text h1{
+    color: darkgoldenrod;
+    font-size:2.5em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#text h3{
+    color: #410012;
+}
+#text h4{
+    font-size: 1.5em;
+    color: #592b30;
+    margin-bottom: 1%;
+}
+#text h5{
+    margin-left: 20%;
+    font-size: 1.4em;
+}
+
+#text h7{
+    font-size: 1em;
+    width: 100%;
+}
+#text p {
+    text-align:justify;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+/* ----------- homecantina con modifiche -------------*/
+.dati{
+    margin-left:5%;
+    float: left;
+    width: 60%;
+}
+.dati #dat, .votazione #dat, .prod #dat{
+    color: black;
+}
+.votazione{
+    float:left;
+    width: 30%;
+    margin-bottom: 15%;
+}
+#dati p{
+    margin-left: 3%;
+}
+input[type=text]{
+    width: 40%;
+    padding:1%;
+}
+.inputcant{
+    margin-left: 5%;
+    background-color: floralwhite;
+    border: none;
+    margin-top: 1%;
+}
+.labeldesc{
+    margin-left: 5%;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10%;
+}
+label{
+    margin-left: 5%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+textarea {
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: .4em;
+    resize: none;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    width: 120%;
+    background-color: floralwhite;
+    border: none;
+}
+.ok{
+    color: white;
+    background-color: darkgray;
+    border-radius: .4em;
+    padding:2%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom:2%;
+}
+.mod{
+    color: white;
+    border-radius: .4em;
+    padding:1%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom:2%;
+}
+.mod:disabled{
+    background-color: red;
+}
+.mod:enabled{
+    background-color: green;
+}
+.ok:disabled{
+    background-color: red;
+}
+.ok:enabled{
+    background-color: green;
+}
+.prod{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 75%;
+}
+.prod h4{
+    text-align: center;
+    margin-top: 3%;
+}
+.prod ul{
+    font-size: 1.2em;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.vino{
+    width: 100%;
+    margin-bottom: 30%;
+}
+.vino .tipovino .vini{
+    color: white;
+    text-align: center;
+}
+.vini{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-width: 1px;
+    border-color: #410012;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: #410012;
+}
+.tipovino{
+    margin-left:5%;
+    float: left;
+    width: 88%;
+    border: 2px solid #410012;
+    border-radius: .7em; 
+}
+.tipovino label{
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 2%;
+    font-size: 1.3em;
+    color: #9e454d;
+}
+.tipovino input[type=text]{
+    margin-top: 2%;
+}
+.aggiungi{
+    border-radius: .4em;
+    padding:1%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom:2%;
+}
+input[type=checkbox]{
+    width: 2em;
+    height: 1.5em;
+}
+/* ----------- recensionicantina -------------*/
+#nvot{
+    margin-top: 0.5%;
+}
+.rec{
+    border-radius: .7em;
+    border: 1px solid #410012;
+    margin-top: 3%;
+    margin: 3%;
+    width: 80%;
+    margin-left: 10%;
+}
+.nome{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-width: 1px;
+    border-color: #410012;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: #410012;
+}
+#rec h4{
+    color:white;
+    text-align: center;
+}
+.inf4{
+    float:left;
+    width: 35%;
+    margin-left: 8%;
+}
+.inf5{
+    float:right;
+    width: 35%;
+}
+#rec h5{
+    float: left;
+    font-size: 1.2em;
+    color: #9e454d;
+}
+#idut{
+    font-size: 1em;
+    margin-top: 1%;
+}
+#vot{
+    font-size: 1em;
+    margin-top: 1%;
+}
+.descrec{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.descrec label{
+    margin-left: 5%;
+    font-size: 1.2em;
+    color: #9e454d;
+    
+}
+
+/* ----------- modifica evento -------------*/
+#newevento{
+    margin-left: 70%;
+    font-style: italic;
+    margin-bottom: 2%;
+}
+.event{
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+}
+#text .event h4{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: #410012;
+    text-align: center;
+    color: white;
+}
+.event .inf1{
+    float:left;
+    width: 35%;
+}
+.event .inf2{
+    float:right;
+    width: 55%;
+}
+.event .inf3{
+    float:left;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 5%;;
+}
+.event h5{
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #9e454d;
+}
+#text .event .inf3 .id3{
+    margin-left: 2%;
+}
+.event .inf1 .inputeve{
+    font-size: 0.8em;
+    margin-top: 2.7%;
+}
+.event .inf2 .link1{
+    font-size: 1em;
+    margin-top: 2.5%;
+}
+.event .inf3 .link1{
+    font-size: 1em;
+    margin-top: 2.1%;
+}
+#text p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#sotto{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.desc1{
+    margin-top: 1%;
+    color: black;
+    font-weight: bold;
+}
+.desc{
+    border-color: #410012;
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: floralwhite;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 14.5%;
+    margin-bottom: 3%;
+    word-wrap:break-word;
+}
+.desc2{
+    border-color: #410012;
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: floralwhite;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    word-wrap:break-word;
+}
+.checkevento{
+    width:2em;
+    height:3em;
+}
+#inputeve{
+    margin-left: 5%;
+    background-color: floralwhite;
+    border: none;
+    margin-top: 1%;
+}
+.elimina{
+    border-radius: .4em;
+    padding:1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 3%;
+    margin-bottom:1%;
+    background-color: #2d2d2d;
+    color: white;
+}
+
+/* ----------- homecantina vista utente -------------*/
+#text #descrizione{
+    margin-left: 5%;
+    margin-right: 8%;
+}
+#valutazione{
+    width: 48.5%;
+}
+.NewRec label{
+    margin-left: 10%;
+}
+.conferma, .annulla{
+    border-radius: .4em;
+    padding:1%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom:2%;
+}
+#rec2 h4{
+    color:white;
+    text-align: center;
+}
+#rec2 h5{
+    float: left;
+    font-size: 1.2em;
+    color: #9e454d;
+}
+#text #rech5 {
+    margin-left: 5%;
+    margin-right: 100%;
+}
+#text #recensione{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    font-size: 1em;
+}
+.inf4{
+    float:left;
+    width: 35%;
+    margin-left: 5%;
+}
+.NewRec textarea{
+    margin-left: 10%;
+    width: 80%;
+}
+.prodhome{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+.prodhome h4{
+    text-align: center;
+    margin-top: 3%;
+}
+.prodhome ul{
+    font-size: 1.2em;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.rec2 input[type=text]{
+    width: 23.5%;
+    padding:1%;
+    background-color: floralwhite;
+    border: none;
+    margin-bottom: 1%;
+}
+.rec2 label{
+    font-size: 1.2em;
+    color: #9e454d;
+}
+.rec2{
+    border-radius: .7em;
+    border: 1px solid #410012;
+    margin-top: 5%;
+    margin: 3%;
+    width: 87%;
+    margin-left: 5%;
+}
+.RECUT{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.RECUT h4{
+    text-align: center;
+    font-size: 1.2em;
+    color: #9e454d;
+}
+#desc{
+    text-align: center;
+}
+#text h6{
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.DESC2{
+    margin-top: 15%;
+}
+.DESC2 label{
+    margin-left: 38%;
+    font-size: 1.5em;
+    color: #592b30;
+    margin-bottom: 1%;
+}
+.DESC2 textarea {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:100%;
+    resize: none;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    width: 88%;
+    background-color: transparent;
+    border: none;
+}
+select{
+    padding: 0.5%;
+}
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    font-size: 0.8em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    background-color: #404040;
+    color:white;
+    font-style:oblique;
+}
+#fine h6{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+#left{
+    float: left;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+#right{
+    margin-right: 20%;
+    margin-top: 1%;
+    float: right;
+}

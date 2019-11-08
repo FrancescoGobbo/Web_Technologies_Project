@@ -1,0 +1,341 @@
+/* 
+================
+SEZIONE GENERALE
+================
+*/
+* {
+    padding: 0em;
+    margin: 0em;
+}
+html, body {
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+body {
+    background-color: #6b393e;
+}
+a:hover{
+    text-decoration: underline;
+    color:#E0A175;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#text a:hover{
+    color:saddlebrown;
+}
+#text a{
+    color:#ff4547;
+}
+
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+#header{
+    text-align: left;
+    background-color: #6b393e;
+    padding: 10%;
+    position:relative;
+}
+#logo{
+    float: left;
+    position: absolute;
+    width:12%;
+    left: 44%;
+    top: 10%;
+}
+
+/*
+===================
+SEZIONE TESTO
+===================
+*/
+
+.container2 #recupero{
+    color: red;
+    margin-left: 15%;
+    margin-right:30%
+    font-weight: bold;
+}
+#text .errore{
+    color: red;
+    margin-left: 15%;
+    font-weight: bold;
+}
+#text {
+    border-radius: .7em;
+    margin-left: 25%;
+    margin-right: 10%;
+    width: 40%;
+    padding: 2% 5% 5% 5%;
+    font-size: 0.9em;
+    border-left: 1px solid #DDD;
+    text-align: justify;
+    background-color: blanchedalmond;
+    position: relative;
+}
+#text h2{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4547;
+}
+#text #chiave{
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    font-size: 0.7em;
+}
+#text p {
+    margin-bottom: 2%;
+    text-align:justify;
+    margin-left: 1em;
+    padding-right:5%;
+}
+#text h3{
+    font-size: 75%;
+    margin-left: 15%;
+}
+#text h4{
+    font-size: 75%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#text h5{
+    font-size: 75%;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+#text h6{
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+input[type=file] {
+    background-color: white;
+    width: 70%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 2%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 15%;
+}
+input[type=email], input[type=password], input[type=text]{
+    width: 70%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 2%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 15%;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 40%;
+    margin-left: 15%;
+}
+textarea {
+    width: 70%;
+    padding: 3%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    margin-left: 15%;
+}
+.login {
+    background-color: #696969;
+    color: white;
+    padding: 3%;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    border-radius: .7em;
+    margin-left: 15%;
+}
+.reg{
+    background-color: #a9a9a9;
+    color: white;
+    padding: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: .7em;
+}
+.login:hover, .reg:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#text hr{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+.acc:hover {
+    opacity: 1.5;
+}
+.container {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.container2 {
+    padding:4%;
+    border:3px solid #404040;
+    text-align: left;
+}
+.regista{
+    padding-bottom:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-bottom:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+}
+.regista2{
+    padding:4%;
+    border:3px solid #404040;
+}
+span.psw {
+    margin-left: 15%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 80%;
+}
+
+.utente {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    text-align: left;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+}
+.accedi{
+    padding-bottom:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-bottom:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+}
+.acc{
+    background-color: #6b393e; 
+    opacity:0.6;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1%; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-bottom: 2%;
+    width: 70%;
+    border: 2px solid black;
+    margin-left: 15%;
+    border-radius: .7em;
+}
+.acc:hover {
+    background-color:#6b393e;
+    color: white;
+}
+.regcantina {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    text-align: left;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    border-bottom:3px solid #404040;
+}
+.mydata {
+    padding-top:4%;
+    padding-left:4%;
+    padding-right:4%;
+    border-top:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.ogt {
+    padding-top:2%;
+    padding-left:4%;
+    padding-right:4%;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.msg {
+    padding-top:2%;
+    padding-left:4%;
+    padding-right:4%;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+.invio {
+    padding-left:4%;
+    padding-right:4%;
+    padding-bottom: 4%;
+    border-bottom:3px solid #404040;
+    border-left: 3px solid #404040;
+    border-right: 3px solid #404040;
+    text-align: left;
+}
+#mezzo
+{
+    padding: 5%;
+}
+
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    font-size: 0.8em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    color:white;
+    font-style:oblique;
+}
+#fine h6{
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+#left{
+    float: left;
+    margin-left: 20%;
+}
+#right{
+    margin-right: 20%;
+    float: right;
+}

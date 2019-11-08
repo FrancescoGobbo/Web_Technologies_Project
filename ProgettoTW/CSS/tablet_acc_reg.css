@@ -1,0 +1,92 @@
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+#header{
+    text-align: left;
+    background-color: #6b393e;
+    padding: 15%;
+    position:relative;
+    min-height: 0em;
+}
+#logo{
+    float: left;
+    position: absolute;
+    width:25%;
+    left: 38%;
+    top: 10%;
+}
+/*
+==================
+SEZIONE TEXT
+==================
+*/
+#passwordemail{
+	margin-right: 50%;
+}
+#erNome, #erCognome, #erEmail, #erChiave, #erConfPas{
+    font-size: 0.9em;
+}
+#erChiave{
+    margin-right: 15%;
+}
+#text {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width:70%;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+#text #chiave{
+    margin-top: 1%;
+    font-size: 0.5em;
+}
+input[type=email], input[type=password], input[type=text], input[type=link]{
+    padding: 3%;   
+    font-size: 1em;
+}
+#text h5{
+    font-size:0.5em ;
+}
+.login {
+    font-size: 1em;
+}
+.reg{
+    font-size: 1em;
+}
+.acc{
+    font-size: 1em;
+}
+.login:hover, .reg:hover {
+    box-shadow: none;
+}
+
+textarea {
+    font-size: 1em;
+}
+.conferma{
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 5%;
+}
+.Desc {
+    padding-top: 55%;
+}
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    width: 50%;
+    font-size: 1.5em;
+    margin-left: 15%;
+}
+#left{
+    display: none;
+}
+#right{
+    display: none;
+}

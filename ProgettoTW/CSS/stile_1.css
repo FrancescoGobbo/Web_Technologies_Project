@@ -1,0 +1,39 @@
+#oreno{
+    margin-bottom: 7%;
+}
+#terlano{
+    margin-bottom: 5%;
+}
+#ferrari{
+    margin-bottom:10%;
+}
+#barolo{
+    margin-bottom: 7%;
+}
+.dati #dat, .votazione #dat, .prod #dat{
+    color: black;
+}
+#recCant {
+    margin-left: 10%;
+}
+#logCant {
+    margin-left:25%;
+}
+#new {
+    margin-left: 25%;
+}
+#home {
+    margin-left: 10%;
+}
+#sito {
+    margin-left: 10%;
+}
+#rec h5{
+    margin-right: 3%;
+}
+#vot{
+    margin-top: 0.6%;
+}
+.descrec{
+    margin-top: 6%;
+}

@@ -1,0 +1,792 @@
+/*
+=============
+SEZIONE HEADER
+=============
+*/
+
+#header{
+    background-image: none;
+    background-color: #420d12;
+    padding: 1em 0em 3em 0em;
+    border-bottom:3px solid white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+#logo{
+   display: none;
+}
+
+
+#header h1 {
+    font-size: 3.5em;
+    color:blanchedalmond;
+}
+
+#header h2 {
+    font-size: 2em;
+    left: 65%;
+}
+#header h3 {
+	display: none;
+    
+}
+/*
+===================
+SEZIONE MENU
+===================
+*/
+
+/*HAMBURGHER*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*:focus {
+    outline: none; 
+}
+
+#menu a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+a:hover {
+    opacity: 0.8; 
+}
+
+/* nav toggle */
+/*FRECCIA DI CHIUSURA / LINEETTE MENU */
+.nav-toggle {
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+   /* height: 5%;*/
+    margin-left: 3%;
+    position: fixed; /*fissato il menù*/
+    margin-top: 4%;
+    width: 5%;
+    top:0%;
+    z-index: 2;
+}
+
+.nav-toggle:hover {
+    opacity: 0.8; 
+}
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 70%; /*spazio linee*/
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+}
+.nav-toggle .nav-toggle-bar {
+    margin-top: 0; 
+}
+.nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.8rem; 
+}
+.nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.8rem; 
+}
+.nav-toggle.expanded .nav-toggle-bar {
+    background: transparent;
+    position: absolute;
+}
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+    position: absolute;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+}
+.nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+}
+/* nav */
+#menu .nav {
+    
+    overflow:hidden;
+    
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    color: white;
+    cursor: pointer;
+    font-size: 165%; /*formato scritta del menù*/
+    height: 100%;
+    left: -70%; /* rientra il NAV*/
+    padding: 6% 2% 2% 2%;
+    position: fixed;
+    top: 0%; /*cambio dimensioni immagine menu che si apre*/
+    width: 70%; /*grandezza menu*/
+    z-index: 1; 
+    background-image: url('../IMAGE/sfondo.jpg');
+    background-size: 1000%;
+}
+#menu .nav.expanded {
+    left: 0; 
+}
+#menu .nav ul {
+    position: absolute;
+    top:49%; /*sposto il testo del menu*/
+    width: 60%;
+    /*margin-top: 70%;*/
+    overflow: scroll;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    padding-bottom: 100%;
+    margin-left: 15%;
+    padding: 0;
+}
+#menu a {
+    background-color: transparent;
+}
+#menu a:focus, #menu a:hover, #menu a:active {
+    color:#d11728;
+    border-left:none;
+    padding:0 0 0 10%;
+    background:none;
+}
+/*
+==================
+SEZIONE TEXT
+==================
+*/
+.errore, #textconta .errore{
+    color: red;
+    margin-left: 15%;
+    font-size:1.7em;
+    font-weight: bold;
+}
+#trovo{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+    color: #911f7c;
+}
+#text {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%; 
+    
+    
+    margin-top: 13.7%;
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 80%;
+    padding: 2% 5% 15% 5%;
+    font-size: 1.7em;
+}
+#text h2{
+    font-size: 1.8em;
+}
+#text h3{
+    position:absolute; 
+    bottom:0.5%; 
+    left: 73%;
+    color:white;
+}
+#text p{
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+
+/*--------------- INDEX ----------------*/
+#mappa{
+    display: none;
+}
+.top{
+    margin-top: 120%;
+    text-align: center;
+}
+.tvini{
+    background-size:110% ;
+    width: 60%;
+    font-size: 1.2em;
+    padding:6%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.tcant{
+    background-size:100%;
+    width: 60%;
+    padding:6%;
+    font-size: 1.2em;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.cant {
+    margin-top: 10%;
+}
+.tutta{
+    margin-bottom: 0;
+}
+#italia{
+    margin-left: 35%;
+    margin-bottom: 3%;
+}
+#vaosta, #nliguria, #nemilia, #clazio, #cabruzzo, #scampania, #sbasilicata, #trento, #friuliv{
+    margin-left: 9%;
+}
+#npiemonte{
+    margin-left: 9%;
+}
+#nlombardia{
+    margin-left: 24%;
+}
+#ntoscana{
+    margin-left: 0.5%;
+}
+#nveneto{
+    margin-left: 1.5%;
+}
+#cumbria{
+    margin-left: 0.5%;
+}
+#cmarche{
+    margin-left: 28%;
+}
+#cmolise{
+    margin-left: 21%;
+}
+#spuglia{
+    margin-left: 16.5%;
+}
+#scalabria{
+    margin-left: 17%;
+}
+#isardegna{
+    margin-left: 9%;
+    margin-bottom: 8%;
+}
+#isicilia{
+    margin-left: 17.5%;
+    margin-bottom: 8%;
+}
+.link ul li{
+    float: left;
+    margin-top: 2%;
+    margin-right: 5%;
+    font-size: 1.1em;
+    padding: 2%;
+    border: 2px solid black;
+    background-color: floralwhite;
+}
+.info{
+    font-size: 1.2em;
+    width: 75%;
+}
+#text .top h6, #text .cant h6{
+    font-size: 1.17em;
+}
+#mappaitalia{
+    display: none;
+}
+#text h6{
+    font-size: 1.17em;
+}
+
+/*-------------- CARATTERISTICHE -------------*/
+#cosa{
+    display: none;
+}
+
+/*------------------ INFO -----------------*/
+#vini {
+    display: none;
+}
+
+/*------------------ EVENTI ---------------*/
+
+.ricerca {
+    cursor: pointer;
+    margin-left: 15%;
+    margin-top: 15%;
+    background-image: url('../IMAGE/lente.jpg');
+    background-size: 100%;
+    padding:25%;
+    border-radius: .7em;
+    margin-bottom: 5%;
+}
+label {
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 5%;
+}
+select{
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 5%;
+    font-size: 1em;
+}
+.reg {
+    float: left;
+    margin-right: 1%;
+    width: 35%;
+    margin-bottom: 5%;
+}
+.prov{
+    float: left;
+    margin-right: 1%;
+    width: 37%;
+}
+.prov input[type=text]{
+	width: 100%;
+    margin-top: 0%;
+    font-size: 1em;
+    padding: 3%;
+    margin-left: 2%;
+}
+.ric{
+    float: right;
+    width: 23%;
+    margin-bottom: 7%;
+}
+#evento {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 25%;
+}
+.event{
+    border-color: #410012;
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 3%;
+    margin: 3%;
+}
+.nome{
+    font-size: 1.2em;
+}
+.inf1{
+    font-size: 1.2em;
+    float:left;
+    width: 95%;
+    margin-left:5%;
+}
+.inf2{
+    float: left;
+    font-size: 1.2em;
+    width: 95%;
+    margin-left: 5%;
+}
+.inf3{
+    font-size: 1.2em;
+    float:left;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+#text .event h5 {
+    margin-left: 0%;
+}
+#dataevento{
+    font-size: 0.8em;
+    margin-top: 2.7%;
+}
+#link1{
+    font-size: 0.8em;
+    margin-top: 2.9%;
+}
+.link2{
+    font-size: 0.8em;
+    margin-top: 3%;
+}
+.desc{
+    margin-top: 45%;
+}
+.desc1{
+    color:black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 3%;
+}
+/*-------------- TOP ----------------*/
+#text dd p{
+    margin-bottom: 1%;
+}
+#oreno{
+    width: 24%;
+    margin-bottom: 2%;
+}
+#terlano{
+    width: 13%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+}
+#ferrari{
+    width: 15%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+#barolo{
+    width: 14%;
+    margin-right: 9%;
+    margin-bottom: 3%;
+}
+
+#brunello{
+    width: 13.5%;
+    margin-right: 9%;
+    margin-bottom: 2%;
+}
+
+#regn{
+    display: none;
+}
+
+#cadgal{
+    display: none;
+}
+
+#quintarelli{
+    display: none;
+}
+
+#stoppa{
+    display: none;
+}
+
+#ferr{
+    display: none;
+}
+
+/*----------------- CONTATTI ------------------*/
+.buono{
+    margin-top: 50%;
+    margin-bottom: 100%;
+}
+#textconta p{
+    text-align: left;
+    margin-bottom: 5%;
+    font-size:2em;
+}
+#textconta h6{
+    font-size: 4em;
+}
+#textconta h1{
+    color: #ff4547;
+    font-size:3em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#textconta{
+    margin-top: 13.7%;
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 80%;
+    padding: 2% 5% 15% 5%;
+}
+#grazie{
+    font-size:110%;
+}
+.mydata {
+    padding-top:4%;
+}
+.invio {
+    padding-bottom: 4%;
+}
+.contatti{
+    padding: 3%;
+    cursor: pointer;
+    width: 70%;
+    font-size:2.5em;
+}
+.contatti:hover {
+    box-shadow: none;
+}
+input[type=email], input[type=text]{
+    width: 70%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 3%;
+    margin-left: 15%;
+    font-size: 2em;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 40%;
+    margin-left: 15%;
+    font-size:1.9em;
+}
+textarea {
+    font-size:2em;
+    width: 70%;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
+
+/*---------------- PANNELLI --------------------*/
+.form1{
+    margin-bottom: 20%;
+}
+#panAdmin{
+    background-image:url('../IMAGE/vinosfondo2.jpg');
+    background-size:110%;
+}
+#textAdmin{
+    border-radius: 0em;
+    margin-top: 8%;
+    margin-bottom:0%;
+    margin-left:0%;
+    width: 100%;
+    padding: 2% 8% 25% 5%;
+    font-size: 1.7em;
+    position: relative;
+}
+#textCant{
+    border-radius: 0em;
+    margin-top: 8%;
+    margin-bottom:0%;
+    margin-left:0%;
+    width: 100%;
+    padding: 2% 8% 100% 5%;
+    font-size: 1.7em;
+    position: relative;
+    background-image:url('../IMAGE/ingresso2.jpg');
+    background-size:100%;
+}
+.riga1{
+    padding-top: 2%;
+    padding-left: 20%;
+    margin-right:60%;
+    float: left;
+    width: 70%;
+}
+.riga2{
+    padding-top: 2%;
+    float: left;
+    padding-left: 0%;
+    width: 50%;
+}
+.rigacant1{
+    padding-top: 2%;
+    padding-left:0%;
+    float: left;
+    width:50%;
+}
+.rigacant2{
+    padding-top: 2%;
+    float: left;
+    width:50%;
+}
+.riga3{
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 2%;
+    left: 65%;
+    width:30%;
+}
+#eventi {
+    margin-left: 130%;
+    color: white;
+}
+#cant {
+    margin-left: 120%;
+    color: white;
+}
+#recAdmin {
+     margin-left: 100%;
+    color: white;
+}
+#mail {
+    margin-left:140%;
+    color: white;
+}
+#log {
+    margin-left:125%;
+    font-size: 110%;
+    color: white;
+}
+.form1 .eventi{
+    width: 50%;
+    margin-left: 120%;
+    border-radius: 5em;
+}
+.form1 .cantine{
+    width: 50%;
+    margin-left: 120%;
+    border-radius: 5em;
+}
+.form1 .recensioni{
+    width: 50%;
+    margin-left: 120%;
+    border-radius: 5em;
+}
+.form2 .e-mail{
+    width: 50%;
+    margin-left: 120%;
+    border-radius: 5em;
+}
+.form2 .logout{
+    width: 12%;
+    padding:45%;
+    margin-left:125%;
+    border-radius: 5em;
+}
+.form1 .logCant{
+    width: 12%;
+    padding:50%;
+    margin-left:140%;
+    border-radius: 5em;
+}
+#recCant {
+    margin-left: 110%;
+}
+#logCant {
+    margin-left:115%;
+    font-size: 0.8em;
+}
+#new {
+    margin-left: 140%;
+}
+#home {
+    margin-left: 100%;
+}
+#sito {
+    margin-left: 90%;
+}
+.form1 .recensioniCant{
+    width: 50%;
+    border-radius: 5em;
+    margin-left: 135%;
+}
+.form1 .new{
+    width: 50%;
+    border-radius: 5em;
+    margin-left: 135%;
+}
+.form1 .home{
+    width: 50%;
+    border-radius: 5em;
+    margin-left: 120%;
+}
+.form1 .sito{
+    width: 50%;
+    border-radius: 5em;
+    margin-left: 120%;
+}
+
+/*------------------ RICERCA ------------------*/
+.cantina{
+    border : 12px double Black;
+    margin-top: 1%;
+    padding-bottom:27%;
+    margin-bottom: 4%;
+}
+.genere{
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 5%;
+}
+.regione {
+    margin-right: 1%;
+    width: 28%;
+}
+.provincia{
+    margin-right: 1%;
+    width: 50%;
+}
+.provincia input[type=text]{
+	width:108%;
+    margin-top:0%;
+    padding:2%;
+    font-size:1em;
+    margin-left:2%;
+}
+.lente{
+    margin-left: 90%;
+    width: 30%;
+    margin-bottom: 5%;
+}
+.ricercalente{
+    margin-top: 15%;
+    cursor: pointer;
+    background-image: url('../IMAGE/lente.jpg');
+    background-size: 100%;
+    padding:15%;
+    border-radius: .7em;
+}
+.cantina .votomed{
+    float: left;
+    margin-right: 2%;
+    padding: 0%;
+    margin-left:0%;
+    font-weight: bold;
+}
+.cantina .localita{
+    margin-top: 2%;
+    float: left;
+    margin-right: 2%;
+    padding: 0%;
+    font-weight: bold;
+}
+.cantina .infoc{
+    margin-bottom: 2%;
+    margin-top: 8%;
+}
+.cantina .infocl{
+     margin-top: 6%;
+    margin-bottom: 2%;
+    float: none;
+}
+#push{
+	height:200px;
+}
+/*
+===================
+SEZIONE FOOTER
+===================
+*/
+#fine{
+    clear: both;
+    font-size: 1.3em;
+}
+
+#left{
+    display: none;
+}
+#right{
+    display: none;
+}
